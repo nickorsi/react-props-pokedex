@@ -1,4 +1,5 @@
 import React from 'react';
+import Pokedex from "./Pokedex"
 /**
  * App function returns single pokedex component, which takes an array of
  * objects.
@@ -6,7 +7,7 @@ import React from 'react';
 
 function App () {
   return (
-    <div>
+    <div className="App">
       < Pokedex manyPokemon = {[
           {id: 4,   name: 'Charmander', type: 'fire',     base_experience: 62},
           {id: 7,   name: 'Squirtle',   type: 'water',    base_experience: 63},
@@ -21,3 +22,5 @@ function App () {
     </div>
   )
 }
+
+export default App;
